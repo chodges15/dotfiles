@@ -1,7 +1,6 @@
 [user]
-	name = Thomas Queste
-	email = tom@tomsquest.com
-	signingkey = 0x46ABEB7FF623F5EB
+	name = Chris Hodges
+	email = chris.hodges@gmail.com
 [alias]
 	co = checkout
 	ci = commit
