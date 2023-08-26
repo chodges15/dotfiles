@@ -1,0 +1,35 @@
+set background=dark
+colorscheme dracula
+
+set nocompatible " Forget being compatible with good ol' vi
+set encoding=utf-8 " Default encoding
+set list listchars=tab:»·,trail:· " Display extra whitespace
+set number " Show absolute line numbers on the left.
+syntax on " Turn syntax highlighting on
+set ai " Sets auto-indentation
+set si " Sets smart-indentation
+set noswapfile " Prevent vim from creating .swp files
+set cursorline " Highlight current cursor line
+set hlsearch " When searching (/), highlights matches as you go
+set incsearch " When searching (/), display results as you type (instead of only upon ENTER)
+set noerrorbells " Silence the error bell
+set vb " Set visual bell
+set ch=2 " Command line height
+
+" Set filetype stuff to on
+filetype on
+filetype plugin on
+filetype indent on
+
+" Keep some stuff in the history
+set history=100
+
+" Show the current command in the lower right corner
+set showcmd
+
+" Turn tabs into spaces
+set expandtab
+
+" tell VIM to always put a status line in, even if there is only one window
+set laststatus=2
+

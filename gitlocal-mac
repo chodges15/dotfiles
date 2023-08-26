@@ -1,0 +1,12 @@
+[core]
+    excludesfile = ~/.gitignore
+[credential]
+    helper = osxkeychain
+[user]
+    signingkey = 01849F5C55ED2D4F!
+[commit]
+    gpgsign = true
+[tag]
+    gpgsign = true    
+[gpg]
+    program = /opt/local/bin/gpg
