@@ -1,0 +1,18 @@
+aliases:
+  # Shortcut for accessing a node in a major metro (dfw, iad, pdx, sjc), e.g. `tsh metro sjc8d-rc6-3a`.
+  # Faster than tsh node.
+  metro: bash -c "metro=$(echo $0 | cut -b 1-3); tsh ssh --cluster=dbx-${metro} $0"
+  # Shortcut for accessing a node in any metro by hostname `tsh node bwi1a-i-1234`
+  node: bash -c "cluster=$(tsh ls -R --search=$0 --format=json | jq -r '.[0].cluster'); tsh ssh --cluster=${cluster} $0"
+  # Shortcut for accessing a host alias, e.g. `tsh alias prius`
+  alias: bash -c "cluster=$(tsh ls -R --query='labels[\"host_alias\"] == \"$0\"\' --format=json | jq -r '.[0].cluster'); tsh ssh -A --cluster=${cluster} $0"
+  # Shortcut for pdx-shell with agent forwarding
+  pdx-shell: "tsh ssh -A --cluster=dbx-pdx yss-service=prodbox"
+  # Shortcut for iad-shell with agent forwarding
+  iad-shell: "tsh ssh -A --cluster=dbx-iad yss-service=prodbox"
+  # Mirage shortcut
+  mirage: "tsh ssh -A --cluster=dbx-iad yss-service=alerting_common"
+  eclipse: "tsh ssh -A --cluster=dbx-sjc yss-service=alerting_common"
+  # Your shortcuts here.
+  # E.g. convenience shortcut for InfraSec's shell server
+  # prius: "tsh ssh -A --cluster=dbx-dfw host_alias=prius"

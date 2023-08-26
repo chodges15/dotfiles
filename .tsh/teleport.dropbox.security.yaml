@@ -1,0 +1,11 @@
+web_proxy_addr: teleport.dropbox.security:443
+ssh_proxy_addr: teleport.dropbox.security:3080
+kube_proxy_addr: teleport.dropbox.security:443
+postgres_proxy_addr: teleport.dropbox.security:443
+mysql_proxy_addr: teleport.dropbox.security:3080
+user: chodges@dropbox.com
+cluster: dbx-iad
+dir: ""
+tls_routing_enabled: true
+mfa_mode: auto
+private_key_policy: ""
