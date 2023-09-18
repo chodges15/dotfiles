@@ -4,14 +4,45 @@
 
 - clean: ['~']
 
-- link:
-    ~/.tmux.conf: tmux.conf
-    ~/.vim: vim
-    ~/.vimrc: vimrc
-
-- create:
-    - ~/downloads
-    - ~/.vim/undo-history
-
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+
+- create:
+    - ~/.config
+    - ~/.config/zsh
+
+- link:
+    ~/.gitconfig:
+      relink: true
+    ~/.vimrc:
+      relink: true
+    ~/.gitignore_global:
+      relink: true
+
+- link:
+    ~/.zprofile:
+      if: '[ `uname` = Darwin ]'
+      path: mac-zprofile
+
+- link:
+    ~/.zshrc:
+      path: zsh/zshrc
+      force: true
+      relink: true
+
+- link:
+    ~/.tsh/:
+      glob: true
+      path: dotfiles_dbx/.tsh/**
+      relink: true
+    ~/.gitconfig-dbx:
+      relink: true
+      if: '[ls ./dotfiles_dbx/zsh]'
+
+- link:
+   ~/.oh-my-zsh/custom/themes/powerlevel10k:
+      path: powerlevel10k
+      create: true
+      relink: true
+      force: true
+

@@ -1,0 +1,44 @@
+[user]
+  name = Chris Hodges
+  email = chris.hodges@gmail.com
+[includeIf "hasconfig:remote.*.url:git@github.com:dropbox-internal/*"]
+  path = .gitconfig-dbx
+[dbx]
+  messagedisplayversion = 1
+[diff]
+  tool = bc3
+[difftool "bc3"]
+  trustExitCode = true
+[merge]
+  tool = bc3
+[pretty]
+  one-line = "%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"
+[alias]
+  a   = add
+  p   = pull -q
+  s   = status
+  c   = commit
+  cam = commit -am
+  f   = fetch origin master:master
+  go  = checkout
+  gob = checkout -b
+  gom = checkout master
+  rh = reset origin/master --hard
+  d   = diff
+  dc  = diff --cached
+  dt  = difftool --dir-diff --no-symlinks
+  mt  = mergetool
+  l   = log  --pretty=one-line --abbrev-commit
+  tree    = log --pretty=one-line --all --graph
+  ls      = log --pretty=one-line
+  ll      = log --pretty=one-line --numstat
+
+  details = "!f() { git ll "$1"^.."$1"; }; f"
+
+[core]
+  excludesfile = /Users/chodges/.gitignore_global
+[mergetool]
+  keepBackup = false
+[oh-my-zsh]
+  hide-status = true
+  hide-dirty = true

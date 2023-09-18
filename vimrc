@@ -9,7 +9,6 @@ syntax on " Turn syntax highlighting on
 set ai " Sets auto-indentation
 set si " Sets smart-indentation
 set noswapfile " Prevent vim from creating .swp files
-set cursorline " Highlight current cursor line
 set hlsearch " When searching (/), highlights matches as you go
 set incsearch " When searching (/), display results as you type (instead of only upon ENTER)
 set noerrorbells " Silence the error bell
