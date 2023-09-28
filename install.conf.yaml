@@ -25,6 +25,10 @@
       path: mac-zprofile
 
 - link:
+    ~/.p10k.zsh:
+      path: zsh/p10k.zsh
+      force: true
+      relink: true
     ~/.zshrc:
       path: zsh/zshrc
       force: true
