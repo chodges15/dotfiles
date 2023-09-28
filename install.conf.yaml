@@ -10,6 +10,7 @@
 - create:
     - ~/.config
     - ~/.config/zsh
+    - ~/.config/zsh/config.d/
 
 - link:
     ~/.gitconfig:
@@ -42,6 +43,11 @@
     ~/.tsh/:
       glob: true
       path: dotfiles_dbx/.tsh/**
+      relink: true
+      force: true
+    ~/.config/zsh/config.d/:
+      glob: true
+      path: zsh/config/**
       relink: true
       force: true
     ~/.gitconfig-dbx:
