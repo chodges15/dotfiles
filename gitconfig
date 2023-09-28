@@ -32,6 +32,7 @@
   tree    = log --pretty=one-line --all --graph
   ls      = log --pretty=one-line
   ll      = log --pretty=one-line --numstat
+  mine    = log --pretty=one-line --abbrev-commit -n 10 --author=".*Hodges.*"
 
   details = "!f() { git ll "$1"^.."$1"; }; f"
 
