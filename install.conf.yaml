@@ -39,6 +39,7 @@
       force: true
       relink: true
 
+
 - link:
     ~/.tsh/:
       glob: true
@@ -50,15 +51,15 @@
       path: zsh/config/**
       relink: true
       force: true
-    ~/.config/zsh/config.d/:
+    ~/.config/zsh/config.d/alias_dbx.zsh:
       glob: true
-      path: dotfiles_dbx/zsh/config/**
+      path: dotfiles_dbx/zsh/config/alias_dbx.zsh
       relink: true
       force: true
-      if: '[ls ./dotfiles_dbx/zsh]'
     ~/.gitconfig-dbx:
+      path: dotfiles_dbx/git/gitconfig-dbx
       relink: true
-      if: '[ls ./dotfiles_dbx/zsh]'
+      force: true
 
 - link:
    ~/.oh-my-zsh/custom/themes/powerlevel10k:
