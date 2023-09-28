@@ -50,6 +50,12 @@
       path: zsh/config/**
       relink: true
       force: true
+    ~/.config/zsh/config.d/:
+      glob: true
+      path: dotfiles_dbx/zsh/config/**
+      relink: true
+      force: true
+      if: '[ls ./dotfiles_dbx/zsh]'
     ~/.gitconfig-dbx:
       relink: true
       if: '[ls ./dotfiles_dbx/zsh]'
