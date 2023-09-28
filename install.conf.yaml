@@ -29,6 +29,10 @@
       path: zsh/zshrc
       force: true
       relink: true
+    ~/.oh-my-zsh:
+      path: ohmyzsh
+      force: true
+      relink: true
 
 - link:
     ~/.tsh/:
