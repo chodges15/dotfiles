@@ -43,6 +43,7 @@
       glob: true
       path: dotfiles_dbx/.tsh/**
       relink: true
+      force: true
     ~/.gitconfig-dbx:
       relink: true
       if: '[ls ./dotfiles_dbx/zsh]'
