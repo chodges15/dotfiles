@@ -24,6 +24,7 @@
     ~/.zprofile:
       if: '[ `uname` = Darwin ]'
       path: mac-zprofile
+      relink: true
 
 - link:
     ~/.p10k.zsh:
@@ -32,6 +33,10 @@
       relink: true
     ~/.zshrc:
       path: zsh/zshrc
+      force: true
+      relink: true
+    ~/.bashrc:
+      path: zsh/bashrc
       force: true
       relink: true
     ~/.oh-my-zsh:
