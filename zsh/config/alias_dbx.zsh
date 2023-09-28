@@ -1,0 +1,7 @@
+alias gestalt="bzl tool //dropbox/yaps/gestalt --"
+alias slack="gh dbx merge --slack-notify"
+alias auto="gh dbx merge --slack-notify --test-release auto"
+alias cccp="bzl tool //tools:cccp_auth"
+alias bie="bzl itest-exec"
+alias bis="bzl itest-start"
+alias bik="bzl itest-stop-all -f"

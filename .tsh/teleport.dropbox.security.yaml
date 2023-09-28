@@ -9,3 +9,4 @@ dir: ""
 tls_routing_enabled: true
 mfa_mode: auto
 private_key_policy: ""
+piv_slot: ""
