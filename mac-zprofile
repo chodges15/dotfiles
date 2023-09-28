@@ -1,15 +1,15 @@
-# Set PATH, MANPATH, etc., for Homebrew.
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# # Set PATH, MANPATH, etc., for Homebrew.
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Added by Toolbox App
-export PATH="$PATH:/Users/chodges/Library/Application Support/JetBrains/Toolbox/scripts"
+# # Added by Toolbox App
+# export PATH="$PATH:/Users/chodges/Library/Application Support/JetBrains/Toolbox/scripts"
 
 
-work_dir="./dotfiles_dbx"
+# work_dir="./dotfiles_dbx"
 
-if [[ -d "$work_dir" ]]; then
-  source ./dotfiles_dbx/zsh/mac/*.zsh
-fi
+# if [[ -d "$work_dir" ]]; then
+#   source ./dotfiles_dbx/zsh/mac/*.zsh
+# fi
 
 
 
