@@ -8,3 +8,6 @@
 [submodule "powerlevel10k"]
 	path = powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "dbx"]
+	path = dotfiles_dbx
+	url = git@github.com:chodges_dbx/dotfiles_dbx.git
