@@ -20,11 +20,21 @@
     ~/.gitignore_global:
       relink: true
 
+# Mac Things
 - link:
     ~/.zprofile:
       if: '[ `uname` = Darwin ]'
       path: mac-zprofile
       relink: true
+
+# Work Things
+- link:
+    ~/.ssh/config:
+      if: '[ -f dotfiles_dbx/ssh-config ]'
+      path: dotfiles_dbx/ssh-config
+      relink: true
+      force: true
+
 
 - link:
     ~/.p10k.zsh:
@@ -65,14 +75,7 @@
       path: dotfiles_dbx/git/gitconfig-dbx
       relink: true
       force: true
-    ~/.gitconfig-dbx-main:
-      path: dotfiles_dbx/git/gitconfig-dbx-main
-      relink: true
-      force: true
-    ~/.gitconfig-dbx-osrc:
-      path: dotfiles_dbx/git/gitconfig-dbx-osrc
-      relink: true
-      force: true
+
 
 - link:
    ~/.oh-my-zsh/custom/themes/powerlevel10k:
