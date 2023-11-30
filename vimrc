@@ -1,4 +1,9 @@
 set background=dark
+
+if v:version < 802
+    packadd! dracula
+endif
+syntax enable
 colorscheme dracula
 
 set nocompatible " Forget being compatible with good ol' vi
