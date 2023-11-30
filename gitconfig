@@ -3,6 +3,8 @@
   email = chris.hodges@gmail.com
 [includeIf "hasconfig:remote.*.url:git@github.com:dropbox-internal/*"]
   path = .gitconfig-dbx
+[includeIf "hasconfig:remote.*.url:git@github.com:chodges_dbx/*"]
+  path = .gitconfig-dbx
 [dbx]
   messagedisplayversion = 1
 [diff]
