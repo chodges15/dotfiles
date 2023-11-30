@@ -10,7 +10,7 @@
 	url = https://github.com/romkatv/powerlevel10k.git
 [submodule "dbx"]
 	path = dotfiles_dbx
-	url = git@github.com-emu:chodges_dbx/dotfiles_dbx.git
-[submodule "vundle"]
-	path = vundle
-	url = https://github.com/VundleVim/Vundle.vim.git
+	url = git@github-emu:chodges_dbx/dotfiles_dbx.git
+[submodule "dracula"]
+	path = .vim/bundle/dracula
+	url = https://github.com/dracula/vim.git

@@ -12,8 +12,8 @@
     - ~/.config/zsh
     - ~/.config/zsh/config.d/
     - ~/.vim
+    - ~/.vim/autoload
     - ~/.vim/bundle
-    - ~/.vim/bundle/Vundle.vim
 
 - link:
     ~/.gitconfig:
