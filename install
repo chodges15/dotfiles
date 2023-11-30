@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+# This script is used to install dotfiles using dotbot
+
+# print help with -h flag
+if [[ $1 == "-h" ]]; then
+    echo "Usage: ./install [options]"
+    echo "-o offline: do not run git checkout"
+    echo "-h help: print this message"
+    exit 0
+fi
+
 set -e
 
 CONFIG="install.conf.yaml"
@@ -9,7 +19,13 @@ DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASEDIR}"
-git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${DOTBOT_DIR}"
+if [[ $1 == "-o" ]]; then
+  # remove gitstatus from powerlevel10k
+  echo "Removing gitstatus from powerlevel10k"
+  # Use sed to remove the following line from
+else
+  git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
+  git submodule update --init --recursive "${DOTBOT_DIR}"
+fi
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
