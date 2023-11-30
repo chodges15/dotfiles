@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dotbot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dotbot/lib/pyyaml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dotfiles_dbx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ohmyzsh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ohmyzsh/custom/themes/powerlevel10k" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/powerlevel10k" vcs="Git" />
+  </component>
+</project>
