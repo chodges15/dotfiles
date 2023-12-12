@@ -14,7 +14,7 @@
 [merge]
   tool = bc3
 [pretty]
-  one-line = "%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"
+  one-line = "%Cred%H%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"
 [alias]
   a   = add
   p   = pull -q
@@ -45,3 +45,6 @@
 [oh-my-zsh]
   hide-status = true
   hide-dirty = true
+[pull]
+	ff = only
+	rebase = true
