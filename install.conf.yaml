@@ -29,6 +29,11 @@
       if: '[ `uname` = Darwin ]'
       path: mac-zprofile
       relink: true
+    ~/.config/zsh/config.d/alias_bzl.zsh:
+      if: '[ `uname` = Darwin ] && [ -f dotfiles_dbx/ssh-config ]'
+      path: dotfiles_dbx/zsh/mac_config/bzl.zsh
+      relink: true
+      force: true
 
 # Work Things
 - link:
@@ -67,11 +72,6 @@
     ~/.config/zsh/config.d/:
       glob: true
       path: zsh/config/**
-      relink: true
-      force: true
-    ~/.config/zsh/config.d/alias_dbx.zsh:
-      glob: true
-      path: dotfiles_dbx/zsh/config/alias_dbx.zsh
       relink: true
       force: true
     ~/.gitconfig-dbx:
