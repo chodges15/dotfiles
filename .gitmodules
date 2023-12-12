@@ -11,9 +11,3 @@
 [submodule "dbx"]
 	path = dotfiles_dbx
 	url = git@github.com:chodges_dbx/dotfiles_dbx.git
-[submodule "dracula"]
-	path = .vim/pack/themes/start/dracula/vim
-	url = https://github.com/dracula/vim.git
-[submodule "dracula_old"]
-	path = .vim/pack/themes/opt/dracula
-	url = https://github.com/dracula/vim.git

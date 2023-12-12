@@ -1,11 +1,5 @@
 set background=dark
 
-if v:version < 802
-    packadd! dracula
-endif
-syntax enable
-colorscheme dracula
-
 set nocompatible " Forget being compatible with good ol' vi
 set encoding=utf-8 " Default encoding
 set list listchars=tab:»·,trail:· " Display extra whitespace

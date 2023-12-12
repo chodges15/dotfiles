@@ -15,7 +15,6 @@
     - ~/.vim/pack
     - ~/.vim/pack/plugins
     - ~/.vim/pack/plugins/start
-    - ~/.vim/pack/plugins/opt
 
 - link:
     ~/.gitconfig:
@@ -90,9 +89,10 @@
 - link:
     ~/.vimrc:
       relink: true
+      path: vim/vimrc
     ~/.vim/:
       create: true
       glob: true
-      path: .vim/**
+      path: vim/**
       relink: true
       force: true
