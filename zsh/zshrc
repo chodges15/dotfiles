@@ -11,6 +11,8 @@ if [[ ! -n "${TELEPORT_LOGIN+set}" ]]; then
   POWERLEVEL9K_DISABLE_GITSTATUS=true
 fi
 
+bindkey '\e\e' edit-command-line
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
