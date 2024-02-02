@@ -12,9 +12,8 @@
     - ~/.config/zsh
     - ~/.config/zsh/config.d/
     - ~/.vim
-    - ~/.vim/pack
-    - ~/.vim/pack/plugins
-    - ~/.vim/pack/plugins/start
+    - ~/.vim/bundle
+    - ~/.vim/bundle/Vundle.vim
 
 - link:
     ~/.gitconfig:
@@ -94,5 +93,11 @@
       create: true
       glob: true
       path: vim/**
+      relink: true
+      force: true
+    ~/.vim/bundle/Vundle.vim:
+      glob: true
+      path: vundle/**
+      create: true
       relink: true
       force: true

@@ -11,3 +11,6 @@
 [submodule "dbx"]
 	path = dotfiles_dbx
 	url = git@github-emu:chodges_dbx/dotfiles_dbx.git
+[submodule "vundle"]
+	path = vundle
+	url = https://github.com/VundleVim/Vundle.vim.git
