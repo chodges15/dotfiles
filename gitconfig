@@ -29,6 +29,7 @@
   d   = diff
   dc  = diff --cached
   dt  = difftool --dir-diff --no-symlinks
+  m   = checkout master
   mt  = mergetool
   l   = log  --pretty=one-line --abbrev-commit
   tree    = log --pretty=one-line --all --graph

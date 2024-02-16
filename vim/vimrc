@@ -23,7 +23,6 @@ filetype plugin indent on    " required
 set encoding=utf-8 " Default encoding
 set list listchars=tab:»·,trail:· " Display extra whitespace
 set number " Show absolute line numbers on the left.
-syntax on " Turn syntax highlighting on
 set ai " Sets auto-indentation
 set si " Sets smart-indentation
 set noswapfile " Prevent vim from creating .swp files
