@@ -11,6 +11,7 @@
     - ~/.config
     - ~/.config/zsh
     - ~/.config/zsh/config.d/
+    - ~/.config/zsh/zfuncs/
     - ~/.vim
     - ~/.vim/autoload
     - ~/.vim/bundle
@@ -38,6 +39,12 @@
     ~/.ssh/config:
       if: '[ -f dotfiles_dbx/ssh-config ]'
       path: dotfiles_dbx/ssh-config
+      relink: true
+      force: true
+    ~/.config/zsh/zfuncs/:
+      if: '[ -d dotfiles_dbx/zsh/config/zfuncs ]'
+      glob: true
+      path: dotfiles_dbx/zsh/config/zfuncs/*
       relink: true
       force: true
 

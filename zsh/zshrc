@@ -37,6 +37,8 @@ for conf in "$HOME/.config/zsh/config.d/"*.zsh; do
 done
 unset conf
 
+# Update function path
+fpath=( ~/.config/zsh/zfuncs "${fpath[@]}" )
 
 export EDITOR=/usr/bin/vim
 
