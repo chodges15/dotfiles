@@ -47,6 +47,12 @@
       path: dotfiles_dbx/zsh/config/zfuncs/*
       relink: true
       force: true
+    ~/.config/zsh/config.d/:
+      if: '[ -d dotfiles_dbx/zsh/config ]'
+      glob: true
+      path: dotfiles_dbx/zsh/config/*
+      relink: true
+      force: true
 
 
 - link:
