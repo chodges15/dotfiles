@@ -1,2 +1,2 @@
-alias a="cat ~/.config/zsh/config.d/alias*"
+alias a="cat ~/.gitconfig | sed -n '/\[alias\]/,/\[/p'"
 alias g="git"
