@@ -4,13 +4,10 @@
 	ignore = dirty
 [submodule "ohmyzsh"]
 	path = ohmyzsh
-	url = git@github.com-chodges15:ohmyzsh/ohmyzsh.git
+	url = git@github.com:ohmyzsh/ohmyzsh.git
 [submodule "powerlevel10k"]
 	path = powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
-[submodule "dbx"]
-	path = dotfiles_dbx
-	url = git@github-emu:chodges_dbx/dotfiles_dbx.git
 [submodule "vim/bundle/dracula"]
 	path = vim/bundle/dracula
 	url = git@github.com:dracula/vim.git
