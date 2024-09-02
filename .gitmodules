@@ -11,9 +11,3 @@
 [submodule "dbx"]
 	path = dotfiles_dbx
 	url = git@github-emu:chodges_dbx/dotfiles_dbx.git
-[submodule "dracula"]
-	path = .vim/bundle/dracula
-	url = https://github.com/dracula/vim.git
-[submodule "vim/bundle/dracula"]
-	path = vim/bundle/dracula
-	url = git@github.com:dracula/vim.git
