@@ -42,7 +42,6 @@ fpath=( ~/.config/zsh/zfuncs "${fpath[@]}" )
 
 export EDITOR=/usr/bin/vim
 
-
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
@@ -77,3 +76,4 @@ if command -v kubectl &> /dev/null; then
     source <(kubectl completion zsh)
 fi
 export PATH="$HOME/.pyenv/bin:$HOME/.rd/bin:/opt/homebrew/opt/go@1.21/bin:$PATH"
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -12,6 +12,7 @@
     - ~/.config/zsh
     - ~/.config/zsh/config.d/
     - ~/.config/zsh/zfuncs/
+    - ~/.zsh
     - ~/.vim
     - ~/.vim/autoload
     - ~/.vim/bundle
@@ -127,4 +128,10 @@
       path: vundle/**
       create: true
       relink: true
+      force: true
+
+- link:
+    ~/.zsh/zsh-autosuggestions:
+      path: zsh/zsh-autosuggestions
+      create: true
       force: true
