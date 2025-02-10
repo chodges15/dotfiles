@@ -7,3 +7,4 @@ export XDG_RUNTIME_DIR="$HOME"/.config/systemd/user
 export SOPS_PGP_FP="1388D4ECFDEC119999DE814F3BC63B1C49472D75"
 export GPG_TTY=$(tty)
 $(sops -d ~/sops.env.gpg)
+export ZSH_COPILOT_AI_PROVIDER="anthropic"
