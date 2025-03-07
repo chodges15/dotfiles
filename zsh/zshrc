@@ -42,3 +42,5 @@ fpath=( ~/.config/zsh/zfuncs "${fpath[@]}" )
 
 export EDITOR=/usr/bin/vim
 
+eval "$(direnv hook zsh)"
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
