@@ -33,6 +33,11 @@
       path: dotfiles_dbx/zsh/mac_config/bzl.zsh
       relink: true
       force: true
+    ~/.config/zsh/config.d/profile.zsh:
+      if: '[ `uname` = Darwin ]'
+      path: zsh/mac_config/profile.zsh
+      relink: true
+      force: true
 
 # Work Things
 - link:
