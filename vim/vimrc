@@ -1,21 +1,8 @@
 set background=dark
 
 execute pathogen#infect()
-colorscheme dracula
 
 set nocompatible " Forget being compatible with good ol' vi
-filetype off " vundle requires
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'dracula/vim', { 'name': 'dracula' }
-
-" vundle required post-plugin
-call vundle#end()            " required
-filetype plugin indent on    " required
 
 set encoding=utf-8 " Default encoding
 set list listchars=tab:»·,trail:· " Display extra whitespace

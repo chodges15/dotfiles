@@ -55,6 +55,15 @@
       force: true
 
 
+# Work Things
+- link:
+    ~/.ssh/config:
+      if: '[-f /dotfiles_dbx/ssh-config ]'
+      path: dotfiles_dbx/ssh-config
+      relink: true
+      force: true
+
+
 - link:
     ~/.p10k.zsh:
       path: zsh/p10k.zsh
