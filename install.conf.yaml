@@ -12,6 +12,7 @@
     - ~/.config/zsh
     - ~/.config/zsh/config.d/
     - ~/.config/zsh/zfuncs/
+    - ~/.zsh
     - ~/.vim
     - ~/.vim/autoload
     - ~/.vim/bundle
@@ -31,6 +32,11 @@
     ~/.config/zsh/config.d/alias_bzl.zsh:
       if: '[ `uname` = Darwin ] && [ -f dotfiles_dbx/ssh-config ]'
       path: dotfiles_dbx/zsh/mac_config/bzl.zsh
+      relink: true
+      force: true
+    ~/.config/zsh/config.d/profile.zsh:
+      if: '[ `uname` = Darwin ]'
+      path: zsh/mac_config/profile.zsh
       relink: true
       force: true
 
@@ -122,4 +128,10 @@
       path: vundle/**
       create: true
       relink: true
+      force: true
+
+- link:
+    ~/.zsh/zsh-autosuggestions:
+      path: zsh/zsh-autosuggestions
+      create: true
       force: true
