@@ -1,6 +1,3 @@
-. "$HOME/.asdf/asdf.sh"
-. "$HOME/.asdf/completions/asdf.bash"
-. ~/.asdf/plugins/golang/set-env.zsh
 export EDITOR=/usr/bin/vim
 
 export PATH="/opt/homebrew/opt/openjdk@21/bin:/opt/homebrew/opt/node@22/bin:$PATH"
