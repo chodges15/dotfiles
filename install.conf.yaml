@@ -16,6 +16,8 @@
     - ~/.vim
     - ~/.vim/autoload
     - ~/.vim/bundle
+    - ~/.claude
+    - ~/.claude/hooks
 
 - link:
     ~/.gitconfig:
@@ -108,16 +110,14 @@
       path: dotfiles_dbx/git/gitconfig-dbx
       relink: true
       force: true
-    ~/.claude/:
-      glob: true
-      path: claude/**
+    ~/.claude/settings.json:
+      path: claude/settings.json
       relink: true
       force: true
-    ~/.claude/hooks:
+    ~/.claude/hooks/:
       glob: true
-      path: claude/**
+      path: claude/hooks/**
       relink: true
-      force: true
 
 
 - link:
