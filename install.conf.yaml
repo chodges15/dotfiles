@@ -113,6 +113,11 @@
       path: claude/**
       relink: true
       force: true
+    ~/.claude/hooks:
+      glob: true
+      path: claude/**
+      relink: true
+      force: true
 
 
 - link:
