@@ -22,7 +22,7 @@
   c   = commit
   cam = commit -am
   f   = fetch origin master:master
-  files  = diff-tree --no-commit-id --name-only -r HEAD
+  files  = diff-tree --no-commit-id --name-only -r
   go  = checkout
   gob = checkout -b
   gom = checkout master
@@ -50,3 +50,5 @@
 [pull]
 	ff = only
 	rebase = true
+[credential]
+	useHttpPath = true

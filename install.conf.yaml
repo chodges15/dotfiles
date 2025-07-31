@@ -75,6 +75,10 @@
       path: zsh/p10k.zsh
       force: true
       relink: true
+    ~/.load-env.zsh:
+      path: zsh/load-env.zsh
+      force: true
+      relink: true
     ~/.zshrc:
       path: zsh/zshrc
       force: true
@@ -102,6 +106,11 @@
       force: true
     ~/.gitconfig-dbx:
       path: dotfiles_dbx/git/gitconfig-dbx
+      relink: true
+      force: true
+    ~/.claude/:
+      glob: true
+      path: claude/**
       relink: true
       force: true
 
