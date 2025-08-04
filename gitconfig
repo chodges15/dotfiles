@@ -48,5 +48,7 @@
   hide-status = true
   hide-dirty = true
 [pull]
-	ff = only
-	rebase = true
+  ff = only
+  rebase = true
+[credential]
+  useHttpPath = true
