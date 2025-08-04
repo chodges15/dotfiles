@@ -138,9 +138,3 @@
       create: true
       relink: true
       force: true
-
-- link:
-    ~/.zsh/zsh-autosuggestions:
-      path: zsh/zsh-autosuggestions
-      create: true
-      force: true
