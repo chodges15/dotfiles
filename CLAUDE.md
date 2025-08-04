@@ -4,6 +4,7 @@ This is my home directory and holds my dotfiles. Here are some instructions on h
 
 2. The configuration for this tool is located in ~/src/dotfiles/install.conf.yaml
 3. To apply the configuration you can run ~/src/dotfiles/install
+4. I have my claude configuration in ./claude - including custom hooks and a settings.json
 
 ** Configuration Syntax **
 ## Configuration
