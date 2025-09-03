@@ -3,6 +3,7 @@ set background=dark
 execute pathogen#infect()
 
 set nocompatible " Forget being compatible with good ol' vi
+filetype plugin indent on    " required
 
 set encoding=utf-8 " Default encoding
 set list listchars=tab:»·,trail:· " Display extra whitespace

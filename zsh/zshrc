@@ -41,7 +41,6 @@ fpath=( ~/.config/zsh/zfuncs "${fpath[@]}" )
 
 export EDITOR=/usr/bin/vim
 
-
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
@@ -76,4 +75,3 @@ export PATH="$HOME/.pyenv/bin:$HOME/.rd/bin:/opt/homebrew/opt/go@1.21/bin:$PATH"
 # load environment file if present
 [[ ! -f ~/.load-env.zsh ]] || source ~/.load-env.zsh
 loadenv
-

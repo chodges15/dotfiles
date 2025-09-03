@@ -1,0 +1,11 @@
+{
+  "awsAuthRefresh": "aws sso login --profile claude",
+  "env": {
+    "AWS_PROFILE": "claude",
+    "AWS_REGION": "us-west-2",
+    "CLAUDE_CODE_USE_BEDROCK": "1",
+    "ANTHROPIC_MODEL": "us.anthropic.claude-sonnet-4-20250514-v1:0"
+  },
+  "awsAuthRefresh": "aws sso login --profile claude --no-browser --use-device-code",
+  "$schema": "https://json.schemastore.org/claude-code-settings.json"
+}

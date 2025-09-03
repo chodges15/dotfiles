@@ -8,7 +8,7 @@
 [dbx]
   messagedisplayversion = 1
 [diff]
-	tool = bc
+  tool = bc
 [difftool "bc3"]
   trustExitCode = true
 [merge]
@@ -52,5 +52,3 @@
   rebase = true
 [credential]
   useHttpPath = true
-[difftool "bc"]
-	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
